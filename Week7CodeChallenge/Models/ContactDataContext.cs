@@ -8,6 +8,11 @@ namespace Week7CodeChallenge.Models
 {
     public class ContactDataContext : DbContext
     {
-        public virtual DbSet<W7Contact> Contacts { get; set; }
+        public virtual DbSet<W7Contact> W7Contacts { get; set; }
+                
+        public ContactDataContext(): base("DefaultConnection")
+        {
+
+        }
     }
 }
