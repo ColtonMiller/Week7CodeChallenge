@@ -20,10 +20,16 @@ namespace Week7CodeChallenge.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+        [HttpPost]
+        public ActionResult ThankYou()
+        {
             return View();
         }
     }

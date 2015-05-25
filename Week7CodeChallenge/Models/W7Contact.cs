@@ -16,10 +16,10 @@ namespace Week7CodeChallenge.Models
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
-        [Required]
-        public EmailAddressAttribute Email { get; set; }
-        [Required]
-        public PhoneAttribute Phone { get; set; }
+        [Required, EmailAddressAttribute]
+        public string Email { get; set; }
+        [Required, Phone]
+        public int Phone { get; set; }
         [Required]
         public string Company { get; set; }
         [Required]
