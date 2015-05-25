@@ -17,7 +17,7 @@ namespace Week7CodeChallenge.Controllers
         {
             ViewBag.Message = "Your application description page.";
 
-            return View();
+            return PartialView();
         }
 
         [HttpGet]
@@ -25,12 +25,12 @@ namespace Week7CodeChallenge.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            return PartialView();
         }
         [HttpPost]
         public ActionResult ThankYou()
         {
-            return View();
+            return PartialView();
         }
     }
 }
