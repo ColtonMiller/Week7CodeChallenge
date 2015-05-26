@@ -1,7 +1,19 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
-<p>Use this area to provide additional information.</p>
+﻿<head>
+    <title>About</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>     
+        $(function () {
+            $('#tabs').tabs();
+        });
+  </script>
+</head>
+<div class="container" id="tabs">
+    <ul>
+        <li>
+            <h2>Who</h2>
+        </li>
+    </ul>
+</div>
